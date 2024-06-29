@@ -81,14 +81,14 @@ livenessProbe:
   successThreshold: 1
   httpGet:
     path: /actuator/health
-    port: 8080
+    port: http
 readinessProbe:
   initialDelaySeconds: 60
   failureThreshold: 3
   successThreshold: 1
   httpGet:
     path: /actuator/health
-    port: 8080
+    port: http
 
 env:
   - name: "SPRING_DATASOURCE_URL"
