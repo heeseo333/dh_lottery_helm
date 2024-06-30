@@ -80,6 +80,7 @@ livenessProbe:
   failureThreshold: 3
   successThreshold: 1
   httpGet:
+  
     path: /actuator/health
     port: http
 readinessProbe:
